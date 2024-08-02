@@ -1,0 +1,35 @@
+@media screen and (max-width: 480px) {
+  .cards {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .prices-boxes{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .simple-box, .premium-box{
+    width: 100%;
+  }
+
+  .middle .ss{
+    display: block;
+  }
+
+  .middle .heading{
+    display: none;
+  }
+
+  .button-tags{
+    width: 100%;
+  }
+}

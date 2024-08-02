@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
+
+/* resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #4891FF;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+  
+}
+
+.top-banner {
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  font-weight: 500;
+}
+
+.button {
+  padding: 10px 15px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #f5f5f5;
+}
+
+.header-section {
+  margin-top: 4rem;
+}
+
+.left{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: 824;
+}
+
+.banner{
+  width: 100%;
+}
+.para {
+  font-size: 20px;
+  position: relative;
+  
+}
+
+
+.btn{
+  height: 59px;
+  width: 186px;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  background-color: var(--accent-color);
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn1{
+  height: 59px;
+  width: 186px;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}
+.banner-btn{
+  display: flex;
+  column-gap: 2.5rem;
+}
+.banner .container{
+  background: url('./assets/Images.png') no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+  margin-bottom: 4rem;
+}
+
+.video-page{
+  width: 100vw;
+  background-color: black;
+  margin-bottom: 4rem;
+}
+
+.sub-heading{
+  font-size: 48px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.testimonial{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 3rem;
+  
+}
+
+.testimonial div p{
+  text-align:start;
+}
+
+.page{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  row-gap: 3rem;
+  margin-top: 2rem;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  align-items: baseline;
+}
+
+.card{
+  display: flex;
+  width: 27%;
+  height: auto;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  padding: 25px 35px;
+  border-radius: 20px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p{
+  margin-bottom: 2rem;
+}
+
+/* Pricing page */
+
+.prices-boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.simple-box, .premium-box{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #FAFAFA;
+  width: 29%;
+  padding: 30px 50px 30px 50px;
+  border-radius: 12px;
+  row-gap: 1.5rem;
+}
+
+.ss{
+  display: none;
+}
+
+.liner {
+  height: 2px;
+  background-color: #DFDEE2;
+  opacity: 0.2;
+  width: 100%;
+}
+
+.pricing-tag{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.pricing-tag p .premium-box p{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.simple-box button{
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+}
+.price-features{
+  line-height: 2.3rem;
+}
+.simple-box p .premium-box p{
+  opacity: 0.88;
+  line-height: 1.7rem;
+  
+}
+
+.simple-box h2 .premium-box h2{
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.premium-box{
+  background-color: black;
+  color: white;
+}
+
+.premium-box button{
+  width: 100%;
+  height: 3rem;
+}
+
+
+/* Teams page */
+
+.teams-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  row-gap: 20rem;
+}
+
+.button-tags{
+  padding: 2px;
+  background-color: #F3F4F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  width: 45%;
+  height: 3.6rem;
+  border-radius: 12px;
+}
+.btn11{
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background-color: var(--accent-color);
+  width: 4rem;
+  font-size: 16px;
+  color: white;
+  height: 2.7rem;
+}
+
+.btn2{
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.btn3{
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+/* Accordian */
+
+.accordion {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion-button {
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  background-color: white;
+
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  border-top: none;
+}
+
+.accordion-button.active {
+  display: block;
+}
+
+.accordion-content.show {
+  display: block;
+}
+
+/* footer */
+
+.footer-section{
+  display: flex;
+  height: 50vh;
+  background-color: black;
+  column-gap: 3rem;
+  justify-content: center;
+  column-gap: 10rem;
+  flex-wrap: wrap;
+}
+.left-footer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.subscribe{
+  background-color: white;
+  border-radius: 20px;
+  width: 25rem;
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3rem;
+
+}
+
+.email{
+  display: flex;
+  gap: 1rem;
+}
+
+.email input{
+  width: 30rem;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid rgb(143, 143, 143);
+  padding: 10px;
+}
+
+.email button{
+  height: 2.5rem;
+  padding: 10px 25px 10px 25px;
+}
+
+.subscribe p{
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.right-footer{
+  color: white;
+  display: flex;
+  column-gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+
+} 
+
+.newsletter{
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+
+}
+.company div{
+  opacity: 0.7;
+  font-size: 15px;
+}
